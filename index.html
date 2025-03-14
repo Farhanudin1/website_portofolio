@@ -54,9 +54,7 @@
 
 /* PROJECT SECTION */
 #projects {
-    background: url('MonitoringArduinoCloud.png') center/cover no-repeat;
-    background-size: cover;
-    background-position: center;
+    background: url('MonitoringArduinoCloud.png') center center / cover no-repeat;
     background-attachment: fixed;
     padding: 5rem 0;
     position: relative;
@@ -216,8 +214,9 @@
         height: 150px;
     }
     #projects {
-        padding: 3rem 0;
-        background-size: contain;
+        background-attachment: scroll; /* Hilangkan fixed agar mobile lebih fleksibel */
+        background-size: cover;
+        background-position: center center;
     }
     #projects::before {
         background: rgba(0, 0, 0, 0.7);
@@ -311,10 +310,10 @@
                     <span class="skill-badge">3D Design</span>
                 </div>
                 <div class="text-center mt-4">
-                <a href="CV_Farhan_Khoirudin.pdf" class="btn btn-custom" download>
-                <i class="bi bi-file-earmark-arrow-down"></i> Download CV
-                </a>
-            </div>
+                    <a href="CV_Farhan_Khoirudin.pdf" class="btn btn-custom" download>
+                        <i class="bi bi-file-earmark-arrow-down"></i> Download CV
+                    </a>
+                </div>
             </div>
         </div>
     </div>
